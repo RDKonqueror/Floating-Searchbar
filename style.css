@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Numans', sans-serif;
+}
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.container h1 {
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+    color: #bde2ea;
+}
+.container form {
+    display: flex;
+}
+.container form input {
+    padding: 18px 25px;
+    border: 2px solid #bde2ea;
+    color: #fff;
+    background: transparent;
+    width: 600px;
+    border-radius: 24px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.container form button {
+    color: #bde2ea;
+    background: none;
+    border: none;
+    position: absolute;
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+    margin-left: 555px;
+    cursor: pointer;
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+}
+@keyframes floating {
+    30% { transform: translateY(25px) rotate(2deg); }
+    70%  { transform: translateY(25px) rotate(-2deg); }   
+}
+
+/*@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 25px); }
+    to   { transform: translate(0, -0px); }    
+}*/
