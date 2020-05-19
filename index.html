@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="cssanimation.css" />
+    <script src="js/letteranimation.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .leRencontre span { animation: leRencontre 4s; animation-iteration-count: infinite }
+@keyframes leRencontre {
+    0%, 33%, 100% {
+        transform-origin: bottom;
+        animation-timing-function: cubic-bezier(.17,.67,.79,1.83)
+    }
+    33% { transform: translateY(-5px) rotate(-5deg) } /* edited */
+    66% { transform: translateY(5px) rotate(5deg) } /* edited */
+}
+    </style>
+    <title>Floating Searchbar</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1 class=" cssanimation random leRencontre">Floating Searchbar</h1>
+        <form>
+            <input type="text" placeholder="SEARCH" class="floating" />
+            <button><i class="fa fa-search floating" aria-hidden="true"></i></button>
+        </form>
+    </div>
+
+</body>
+</html>
