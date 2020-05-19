@@ -3,7 +3,8 @@ A searchbar with floating animation using HTML, CSS, Javascript and cssanimation
 
 My edit:
 
-
+<code>
+<pre>
 .leRencontre span {
     animation: leRencontre 4s;
     animation-iteration-count: infinite;
@@ -20,7 +21,8 @@ My edit:
         transform: translateY(5px) rotate(5deg);
     }
 }
-
+</pre>
+</code>
 
 
 
