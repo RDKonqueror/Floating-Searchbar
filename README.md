@@ -22,4 +22,6 @@ My edit:
 }
 </code>
 
+
+
 <img src="https://github.com/RDKonqueror/Floating-Searchbar/blob/master/shot.png" width="766px" height="442px" />
