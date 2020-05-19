@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-        .leRencontre span { animation: leRencontre 4s; animation-iteration-count: infinite }
-@keyframes leRencontre {
-    0%, 33%, 100% {
-        transform-origin: bottom;
-        animation-timing-function: cubic-bezier(.17,.67,.79,1.83)
-    }
-    33% { transform: translateY(-5px) rotate(-5deg) } /* edited */
-    66% { transform: translateY(5px) rotate(5deg) } /* edited */
-}
+        .leRencontre span {
+            animation: leRencontre 4s;
+            animation-iteration-count: infinite
+        }
+        @keyframes leRencontre {
+            0%, 33%, 100% {
+                transform-origin: bottom;
+                animation-timing-function: cubic-bezier(.17,.67,.79,1.83);
+            }
+            33% {
+                transform: translateY(-5px) rotate(-5deg);
+            }
+            66% {
+                transform: translateY(5px) rotate(5deg);
+            }
+        }
     </style>
     <title>Floating Searchbar</title>
 </head>
