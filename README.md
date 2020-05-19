@@ -2,7 +2,6 @@
 A searchbar with floating animation using HTML, CSS, Javascript and cssanimation.io
 
 My edit:
-
 <code>
 <pre>
 .leRencontre span {
